@@ -4,7 +4,7 @@
 </div>
 <div>
     <label for="">Author</label>
-    <select name="author" id="">
+    <select name="author">
         <% authors.forEach(author => { %>
             <% if(author.id === book.author) { %>
                 <option selected label="<%= author.name %>" value="<%= author.id %>"></option>
