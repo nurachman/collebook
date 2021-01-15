@@ -1,0 +1,52 @@
+:root {
+    --color-btn-primary-background: hsl(201, 82%, 57%);
+    --color-btn-primary-text: hsl(201, 57%, 21%);
+    --color-btn-border: rgba(10, 10, 10, 0.123);
+
+    --color-btn-danger-text:hsl(0, 100%, 95%);
+    --color-btn-danger-background: hsl(0, 84%, 66%);
+}
+
+.btn {
+    border: 1px solid var(--color-btn-border);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    font-family: 'Epilogue';
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.btn-row > * {
+    margin-left: 0.5rem;
+}
+
+.btn-row > *:first-child {
+    margin-left: 0;
+}
+
+.btn-primary {
+    color: var(--color-btn-primary-text);
+    background-color: var(--color-btn-primary-background);
+}
+
+.btn-danger {
+    color: var(--color-btn-danger-text);
+    background-color: var(--color-btn-danger-background);
+}
+
+.btn-primary:hover {
+    color: hsl(201, 71%, 81%);
+    background-color: hsl(209, 50%, 50%);
+}
+
+.btn-danger:hover {
+    color: hsl(350, 100%, 87%);
+    background-color: hsl(350, 45%, 52%);
+}
